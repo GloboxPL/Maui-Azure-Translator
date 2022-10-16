@@ -6,9 +6,16 @@
     xmlns:local="clr-namespace:Maui_Azure_Translator"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Translator"
+            ContentTemplate="{DataTemplate local:TranslationPage}"
+            Icon="icon_notes" />
+
+        <ShellContent
+            Title="About app"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Icon="icon_about" />
+    </TabBar>
 
 </Shell>
